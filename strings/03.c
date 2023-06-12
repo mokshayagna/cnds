@@ -10,7 +10,7 @@ int atoupper(int ch)
 
 int main()
 {
-	int ch = 'B';
+	int ch = 'b';
 	int t=0;
 
 	t = toupper(ch);
