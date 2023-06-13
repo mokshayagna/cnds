@@ -1,4 +1,4 @@
-int islower(int ch)
+int aislower(int ch)
 {
 	if(ch>='a'&&ch<='z')
 		return 1;

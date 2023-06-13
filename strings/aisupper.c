@@ -1,4 +1,4 @@
-int isupper(int ch)
+int aisupper(int ch)
 {
 	if(ch>='A' && ch<='Z')
 		return 1;
