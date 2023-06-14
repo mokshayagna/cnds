@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <ctype.h>
 #include "mydefs.h"
-int main()
+int test_is_chars_functions()
 {
 	int ch='M';
 	int t=0;
@@ -22,3 +22,34 @@ int main()
 	return 0;
 }
 
+int test_strcmp()
+{
+	char a[256]="moksha yagna";
+	char b[256]="moksha yagna";
+	int t=0;
+
+	t=astrcmp(a,b);
+	if(t==1)
+		printf("is not same\n");
+	else
+		printf("is  same\n");
+}
+
+int test_strncmp()
+{
+	char a[256]="moksha yagna";
+	char b[256]="moksha yagna";
+	int t=0;
+
+	t=astrncmp(a, b, 5);
+	if(t==1)
+		printf("is not same\n");
+	else
+		printf("is  same\n");
+}
+
+int main()
+{
+	//test_is_chars_functions();
+	test_strcmp();
+}
