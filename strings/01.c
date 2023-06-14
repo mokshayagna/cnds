@@ -1,13 +1,10 @@
 #include <stdio.h>
-#include<ctype.h>
+#include <ctype.h>
+#include "mydefs.h"
 int main()
 {
 	int ch='M';
 	int t=0;
-    int aisupper(int ch);
-	int aislower(int ch);
-    int atoupper(int ch);
-	int atolower(int ch);
 	t = aisupper(ch);
 	if(t==1)
 		printf("%c is upper\n",ch);
