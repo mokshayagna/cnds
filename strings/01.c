@@ -40,8 +40,7 @@ int test_strncmp()
 	char a[256]="moksha yagna";
 	char b[256]="mokshA yagna";
 	int t=0;
-
-	t=astrncmp(a, b, 5);
+    t=astrncmp(a, b, 5);
 	if(t==1)
 		printf("is not same\n");
 	else
@@ -59,6 +58,18 @@ int test_strcasecmp()
 	else
 		printf("is  same\n");
 }
+int test_strncasecmp()
+{
+	char a[256]="moksha yagna";
+	char b[256]="Moksha yagna";
+	int t=0;
+
+	t=astrncasecmp(a, b, 5);
+	if(t==1)
+		printf("is not same\n");
+	else
+		printf("is  same\n");
+}
 
 int main()
 {
@@ -66,4 +77,5 @@ int main()
 	test_strcmp();
 	test_strncmp();
 	test_strcasecmp();
+	test_strncasecmp();
 }
