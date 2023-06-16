@@ -3,7 +3,7 @@
 #include "mydefs.h"
 int test_is_chars_functions()
 {
-	int ch='M';
+	int ch='a';
 	int t=0;
 	t = aisupper(ch);
 	if(t==1)
@@ -19,6 +19,11 @@ int test_is_chars_functions()
 	printf("%c to upper %c\n", ch, t);
 	t = atolower(ch);
 	printf("%c tolower %c\n", ch, t);
+	t= aisdigit(ch);
+	if(t==1)
+		printf("%c is digit\n",ch);
+	else
+		printf("%c is not digit\n",ch);
 	return 0;
 }
 
@@ -70,7 +75,6 @@ int test_strncasecmp()
 	else
 		printf("is  same\n");
 }
-
 int main()
 {
 	test_is_chars_functions();
