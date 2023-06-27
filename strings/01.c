@@ -3,7 +3,7 @@
 #include "mydefs.h"
 int test_is_chars_functions()
 {
-	int ch='a';
+	int ch='F';
 	int t=0;
 	t = aisupper(ch);
 	if(t==1)
@@ -24,6 +24,16 @@ int test_is_chars_functions()
 		printf("%c is digit\n",ch);
 	else
 		printf("%c is not digit\n",ch);
+	t = aisalnum(ch);
+	if(t==1)
+		printf("%c is alphabetnum\n",ch);
+	else
+		printf("%c is not alphabetnum\n",ch);
+	t = aisxdigit(ch);
+	if(t==1)
+		printf("%c is hexadecimal\n",ch);
+	else
+		printf("%c is not hexadecimal\n",ch);
 	return 0;
 }
 

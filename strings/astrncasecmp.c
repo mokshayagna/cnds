@@ -1,3 +1,4 @@
+#include "mydefs.h"
 int astrncasecmp (char *ptr1, char *ptr2, int n)
 {
 	int i;
